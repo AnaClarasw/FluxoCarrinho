@@ -20,7 +20,7 @@ export default function Carrinho() {
     }
 
     function removerProduto(id) {
-        let carrinho = produto.filter(item => item.id !== id);
+        let carrinho = produtos.filter(item => item.id !== id);
 
         Cookie.set('carrinho', JSON.stringify(carrinho));
 

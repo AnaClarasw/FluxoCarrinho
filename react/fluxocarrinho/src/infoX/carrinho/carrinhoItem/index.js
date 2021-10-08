@@ -5,7 +5,7 @@ import Contador from '../contador'
 import { Container, RemoverIcon} from './styled'
 
 
-export default function carrinhoItem(props) {
+export default function CarrinhoItem(props) {
     const [produto, setProduto] = useState(props.info);
 
     function alterarQtd(qtd) {

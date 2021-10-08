@@ -43,24 +43,25 @@ export default function Contador(props) {
             return;
         setQtd(qtd-1)
     }
- }
+
 
  useEffect(() => {
     props.onChange(qtd);
  }, [qtd])
 
  return(
-     <Container>
-         <div className="menos" onClick={decrementar}>
+    <Container>
+        <div className="menos" onClick={decrementar}>
             -
-         </div>
+        </div>
 
-         <div className="quantidade">
+        <div className="quantidade">
             {qtd}
-         </div>
+        </div>
 
-         <div className="mais" onClick={incrementar}>
+        <div className="mais" onClick={incrementar}>
             +
-         </div>
-     </Container>
- )
+        </div>
+    </Container>
+   
+ )}
